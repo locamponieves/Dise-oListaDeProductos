@@ -1,11 +1,11 @@
 :root {
     /* Colores */
-    --grisOscuro       : #263338;
-    --grisClaro        : #888888;
-    --bordeGrisClaro   : #EBEBEB;
-    --blanco           : #FFFFFF;
-    --backgroundfooter : #F7FAFC;
-    --verde            : #4FB68D;
+    --grisOscuro     : #263338;
+    --grisClaro      : #888888;
+    --bordeGrisClaro : #EBEBEB;
+    --blanco         : #FFFFFF;
+    --marronClaro    : #2C2C2C;
+    --rojo           : #ED4F4F;
 
     /* Fuentes */
     --font-family : 'Open Sans', sans-serif;
@@ -38,8 +38,8 @@ img {
 
 /* Estilos para el pide de la página */
 .footer {
-    color            : var(--grisOscuro);
-    background-color : var(--backgroundfooter);
+    color            : var(--blanco);
+    background-color : var(--marronClaro);
     border-top       : 1px solid var(--bordeGrisClaro);
     font-family      : var(--font-family);
     font-weight      : 200;
@@ -69,7 +69,7 @@ img {
 }
 
 .listaCategorias .item:hover {
-    background : var(--verde);
+    background : var(--rojo);
     color      : var(--blanco);
     cursor     : pointer;
 }
@@ -81,7 +81,8 @@ img {
     text-align  : left;
 }
 
-.tituloEncabezado {
+.tituloEncabezado,
+.tituloEncabezadoPrincipal {
     color       : var(--grisOscuro);
     font-family : var(--font-family);
     font-size   : 24px;
@@ -103,7 +104,7 @@ img {
 }
 
 .articulo:hover {
-    border : 1px solid var(--verde);
+    border : 1px solid var(--rojo);
 }
 
 .imagenProducto {
@@ -135,17 +136,17 @@ img {
 }
 
 .contenidoArticulo .precio {
-    color       : var(--verde);
+    color       : var(--grisOscuro);
     font-family : var(--font-family);
     font-weight : 600;
-    float:left;
+    float       :left;
 }
 
 .contenidoArticulo .boton {
-    background    : var(--blanco);
+    background    : var(--rojo);
     border        : none;
     border-radius : 50px;
-    color         : var(--verde);
+    color         : var(--blanco);
     cursor        : pointer;
     float         :right;
     font-family   : var(--font-family);
@@ -158,8 +159,10 @@ img {
 }
 
 .contenidoArticulo .boton:hover {
-    background : var(--verde);
-    color      : var(--blanco);
+    background :var(--blanco);
+    border     : 1px solid var(--rojo);
+    color      : var(--rojo);
+    
 }
 
 /* Estilos para el scroll horizontal */
@@ -169,40 +172,73 @@ img {
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color : rgba(79,182,141,0.6);
+    background-color : rgba(229,62,62,0.6);
     border-radius    : 2px;
 }
 
+/* Estilos para el encabezado principal */
 .logoEmpresa {
-    position : relative;
-    top      : -150px;
+    margin-bottom : 80px;
+    margin-top    : -50px;
 }
 
 .logoEmpresa img {
-    width: 200px;
-    border: 1px solid var(--grisClaro);
-    border-radius: 100px;
+    border-radius : 100px;
+    width         : 200px;
 }
 
-.parrafoEncabezado {
-    color: var(--grisClaro);
-    font-family: var(--font-family);
-    font-weight: 400;
+.parrafoEncabezado,
+.parrafoEncabezadoSecundario {
+    color       : var(--grisClaro);
+    font-family : var(--font-family);
+    font-size   : 13px;
+    font-weight : 400;
 }
 
+.parrafoEncabezadoSecundario {
+    color: var(--rojo);
+    font-size: 14px;
+    font-weight : 600;
+}
+
+.tituloEncabezadoPrincipal {
+    font-size : 26px;
+}
 
 /* MediaQuery */
 
-/* tabletas */
+/* Teléfonos */
+@media (min-width: 480px) {
+    .col-5 {
+        grid-template-columns : repeat(2, 1fr);
+    }
+}
+
+/* Tablet */
 @media (min-width: 768px) {
     .col-5 {
         grid-template-columns : repeat(3, 1fr);
     }
+
+    .parrafoEncabezado,
+    .parrafoEncabezadoSecundario {
+        font-size : 16px;
+    }
 }
 
 /* escritorio normales */
-@media (min-width: 992px) {
-    
+@media (min-width: 1024px) {
+    .col-5 {
+        grid-template-columns : repeat(4, 1fr);
+    }
+
+    .logoEmpresa {
+        margin-top : -110px;
+    }
+
+    .tituloEncabezadoPrincipal {
+        font-size : 35px;
+    }
 }
 
 /* pantallas grandes */
@@ -213,5 +249,9 @@ img {
 
     .col-5 {
         grid-template-columns : repeat(5, 1fr);
+    }
+
+    .tituloEncabezadoPrincipal {
+        font-size : 45px;
     }
 }

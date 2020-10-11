@@ -10,19 +10,22 @@ html(lang="es")
         link(rel="stylesheet", href="css/font-awesome-4.7.0/css/font-awesome.min.css")
         link(rel="stylesheet", href="css/normalize.css")
         link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/loader.css")
     body
+        .loader-page
+
+        .portadaEmpresa
+                img(src="img/portada.jpg", alt="")
         .row
-            .portadaEmpresa
-                img(src="img/header01.jpg", alt="")
             .logoEmpresa
                 img(src="img/logosurti.png", alt="")
 
                 .encabezado
-                    h1.tituloEncabezado.centrado Surtidelicias Montería
+                    h1.tituloEncabezadoPrincipal.centrado Surtidelicias Montería
                     p.parrafoEncabezado.centrado Domicilios y Punto de Venta. Todos los Días de 7am a 6pm. Dom y Festivos hasta 1pm
-                    p.parrafoEncabezado.centrado Cra 9 11A 16 Monteria
-                    p.parrafoEncabezado.centrado Sábado 12:00AM - 11:59PM
+                    p.parrafoEncabezadoSecundario.centrado Cra 9 11A 16 Monteria
                     
+        .row
             .encabezado
                 h1.tituloEncabezado.centrado Nuestros productos
 
@@ -193,5 +196,8 @@ html(lang="es")
                         p.precio $ 3.150
                         button.boton
                             i.fa.fa-shopping-cart(aria-hidden="true")
-
+  
         footer.footer.centrado Diseño web realizado en el 2020
+
+        script(src="https://code.jquery.com/jquery-3.5.1.min.js")
+        script(src="js/loader.js")
