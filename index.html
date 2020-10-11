@@ -4,22 +4,34 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Listado de productos</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap"/>
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <div class="contenedor">
+    <div class="row">
+      <div class="portadaEmpresa"><img src="img/header01.jpg" alt=""/></div>
+      <div class="logoEmpresa"><img src="img/logosurti.png" alt=""/>
+        <div class="encabezado">
+          <h1 class="tituloEncabezado centrado">Surtidelicias Montería</h1>
+          <p class="parrafoEncabezado centrado">Domicilios y Punto de Venta. Todos los Días de 7am a 6pm. Dom y Festivos hasta 1pm</p>
+          <p class="parrafoEncabezado centrado">Cra 9 11A 16 Monteria</p>
+          <p class="parrafoEncabezado centrado">Sábado 12:00AM - 11:59PM</p>
+        </div>
+      </div>
+      <div class="encabezado">
+        <h1 class="tituloEncabezado centrado">Nuestros productos</h1>
+      </div>
       <div class="listaCategorias">
-        <div class="item"> <a href="#pollo">Pollo</a></div>
-        <div class="item"> <a href="#cerdo">Cerdo cong</a></div>
+        <div class="item">Pollo</div>
+        <div class="item">Cerdo cong</div>
         <div class="item">Cerdo nal</div>
         <div class="item">Res</div>
         <div class="item">Angus USA</div>
         <div class="item">Pescado</div>
         <div class="item">Mariscos</div>
-        <div class="item"> <a href="#papa">Papas</a></div>
+        <div class="item">Papas</div>
         <div class="item">Congelados</div>
         <div class="item">Tocinetas</div>
         <div class="item">Salsas</div>
@@ -29,183 +41,158 @@
         <div class="item">Otros</div>
       </div>
     </div>
-    <div class="hero-img" id="pollo">
-      <h1 class="tituloHero">Pollo</h1>
-    </div>
-    <div class="contenedor">
+    <div class="row">
+      <div class="encabezado">
+        <h1 class="tituloEncabezado">Best Sellers</h1>
+        <h2 class="subtituloEncabezado">Add bestselling products to weekly line up</h2>
+      </div>
       <div class="col-5">
-        <article><img class="imagenProducto" src="img/Pollo/01Pollo.png" alt=""/>
-          <h2 class="titulo">ALA DE POLLO CON COSTILLAR</h2>
-          <h3 class="subtitulo">libra</h3>
-          <p class="precio">$ 3.425</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/4.jpg" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Ala de pollo</h2>
+            <h3 class="subtitulo">Libra</h3>
+            <p class="precio">$ 3.425</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/02Pollo.png" alt=""/>
-          <h2 class="titulo">ALA DE POLLO SIN COSTILLAR</h2>
-          <h3 class="subtitulo">libra</h3>
-          <p class="precio">$ 4.225</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/3.jpg" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Punta chuleta</h2>
+            <h3 class="subtitulo">Paquete</h3>
+            <p class="precio">$ 10.650</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/03Pollo.png" alt=""/>
-          <h2 class="titulo">CHUZO CONTRAMUSLO 10 und x 1800 gr</h2>
-          <h3 class="subtitulo">unidad</h3>
-          <p class="precio">$ 28.000</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/product-9.jpg" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Recorte de chuleta</h2>
+            <h3 class="subtitulo">Libra</h3>
+            <p class="precio">$ 4.300</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/04Pollo.png" alt=""/>
-          <h2 class="titulo">CONTRAMUSLO</h2>
-          <h3 class="subtitulo">libra</h3>
-          <p class="precio">$ 13.450</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/product-11.jpg" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Carne molida de res</h2>
+            <h3 class="subtitulo">Bolsa</h3>
+            <p class="precio">$ 7.350</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/05Pollo.png" alt=""/>
-          <h2 class="titulo">GOULASH DE PECHUGA</h2>
-          <h3 class="subtitulo">libra</h3>
-          <p class="precio">$ 4.450</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/product-20.jpg" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Arveja verde x 500g</h2>
+            <h3 class="subtitulo">Paquete</h3>
+            <p class="precio">$ 5.550</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/06Pollo.png" alt=""/>
-          <h2 class="titulo">MENUDENCIA DE POLLO</h2>
-          <h3 class="subtitulo">paquete</h3>
-          <p class="precio">$ 1.550</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Cerdo/01Cerdo.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Bandeja lomo de cerdo tajado</h2>
+            <h3 class="subtitulo">Libra</h3>
+            <p class="precio">$ 7.250</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/07Pollo.png" alt=""/>
-          <h2 class="titulo">MOLLEJA DE POLLO</h2>
-          <h3 class="subtitulo">paquete</h3>
-          <p class="precio">$ 3.150</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Cerdo/02Cerdo.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Cerdo molido</h2>
+            <h3 class="subtitulo">Libra</h3>
+            <p class="precio">$ 5.950</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/07Pollo.png" alt=""/>
-          <h2 class="titulo">MOLLEJA DE POLLO</h2>
-          <h3 class="subtitulo">paquete</h3>
-          <p class="precio">$ 3.150</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Cerdo/03Cerdo.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Chicharron con costilla x 500gr</h2>
+            <h3 class="subtitulo">Paquete</h3>
+            <p class="precio">$ 5.850</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/07Pollo.png" alt=""/>
-          <h2 class="titulo">MOLLEJA DE POLLO</h2>
-          <h3 class="subtitulo">paquete</h3>
-          <p class="precio">$ 3.150</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Papas/01Papa.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Papa francesa 7x7 x 1Kg</h2>
+            <h3 class="subtitulo">Bolsa</h3>
+            <p class="precio">$ 5.000</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/07Pollo.png" alt=""/>
-          <h2 class="titulo">MOLLEJA DE POLLO</h2>
-          <h3 class="subtitulo">paquete</h3>
-          <p class="precio">$ 3.150</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Papas/02Papa.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Papa a la francesa mydibel 9x9 x 1Kg</h2>
+            <h3 class="subtitulo">Bolsa</h3>
+            <p class="precio">$ 5.850</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/07Pollo.png" alt=""/>
-          <h2 class="titulo">MOLLEJA DE POLLO</h2>
-          <h3 class="subtitulo">paquete</h3>
-          <p class="precio">$ 3.150</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Papas/03Papa.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Papa 9x9 francesa ricongelisto x 2 Kg</h2>
+            <h3 class="subtitulo">Bolsa</h3>
+            <p class="precio">$ 10.700</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
-        <article><img class="imagenProducto" src="img/Pollo/07Pollo.png" alt=""/>
-          <h2 class="titulo">MOLLEJA DE POLLO</h2>
-          <h3 class="subtitulo">paquete</h3>
-          <p class="precio">$ 3.150</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Pollo/01Pollo.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Pechuga abierta fresca</h2>
+            <h3 class="subtitulo">Libra</h3>
+            <p class="precio">$ 5.950</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
+        </article>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Pollo/02Pollo.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Pata y cabeza</h2>
+            <h3 class="subtitulo">paquete</h3>
+            <p class="precio">$ 2.500</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
+        </article>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Pollo/03Pollo.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Pata pescuezo</h2>
+            <h3 class="subtitulo">paquete</h3>
+            <p class="precio">$ 4.400</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
+        </article>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Pollo/04Pollo.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Muslo de pollo colombiana</h2>
+            <h3 class="subtitulo">Libra</h3>
+            <p class="precio">$ 2.250</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
+        </article>
+        <article class="articulo">
+          <header><img class="imagenProducto" src="img/Pollo/06Pollo.png" alt=""/></header>
+          <div class="contenidoArticulo">
+            <h2 class="titulo">Molleja de pollo</h2>
+            <h3 class="subtitulo">Paquete</h3>
+            <p class="precio">$ 3.150</p>
+            <button class="boton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </div>
         </article>
       </div>
     </div>
-    <div class="hero-img" id="cerdo">
-      <h1 class="tituloHero">Cerdo cong</h1>
-    </div>
-    <div class="contenedor">
-      <div class="col-5">
-        <article><img class="imagenProducto" src="img/Cerdo/01Cerdo.png" alt=""/>
-          <h2 class="titulo">BANDEJA LOMO DE CERDO TAJADO</h2>
-          <h3 class="subtitulo">libra</h3>
-          <p class="precio">$ 7.250</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Cerdo/02Cerdo.png" alt=""/>
-          <h2 class="titulo">CERDO MOLIDO</h2>
-          <h3 class="subtitulo">libra</h3>
-          <p class="precio">$ 6.000</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Cerdo/03Cerdo.png" alt=""/>
-          <h2 class="titulo">CHICHARRON CON COSTILLA x 500 gr</h2>
-          <h3 class="subtitulo">paquete</h3>
-          <p class="precio">$ 5.850</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Cerdo/04Cerdo.png" alt=""/>
-          <h2 class="titulo">CODILLOS DE CERDO</h2>
-          <h3 class="subtitulo">libra</h3>
-          <p class="precio">$ 3.875</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Cerdo/05Cerdo.png" alt=""/>
-          <h2 class="titulo">COSTILLA CENTRO PREMIUN (St Louis)</h2>
-          <h3 class="subtitulo">libra</h3>
-          <p class="precio">$ 9.000</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Cerdo/06Cerdo.png" alt=""/>
-          <h2 class="titulo">COSTILLA DE CERDO (Brisket)</h2>
-          <h3 class="subtitulo">libra</h3>
-          <p class="precio">$ 6.250</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Cerdo/07Cerdo.png" alt=""/>
-          <h2 class="titulo">COSTILLA DE CERDO AHUMADAS x 350 g</h2>
-          <h3 class="subtitulo">paquete</h3>
-          <p class="precio">$ 6.650</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-      </div>
-    </div>
-    <div class="hero-img" id="papa">
-      <h1 class="tituloHero">Papas</h1>
-    </div>
-    <div class="contenedor">
-      <div class="col-5">
-        <article><img class="imagenProducto" src="img/Papas/01papa.png" alt=""/>
-          <h2 class="titulo">PAPA 9x9 FRANCESA RICONGELISTO x 2 Kg</h2>
-          <h3 class="subtitulo">bolsa</h3>
-          <p class="precio">$ 10.700</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Papas/02papa.png" alt=""/>
-          <h2 class="titulo">PAPA A LA FRANCESA MYDIBEL 9x9 x 1 Kg</h2>
-          <h3 class="subtitulo">bolsa</h3>
-          <p class="precio">$ 5.850</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Papas/03papa.png" alt=""/>
-          <h2 class="titulo">PAPA A LA FRANCESA MYDIBEL 9X9 x 2,5 Kg</h2>
-          <h3 class="subtitulo">bolsa</h3>
-          <p class="precio">$ 14.100</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Papas/04papa.png" alt=""/>
-          <h2 class="titulo">PAPA CRIOLLA REDONDA X 1000 g</h2>
-          <h3 class="subtitulo">bolsa</h3>
-          <p class="precio">$ 7.300</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Papas/05papa.png" alt=""/>
-          <h2 class="titulo">PAPA FRANCESA 7x7 x 1Kg</h2>
-          <h3 class="subtitulo">bolsa</h3>
-          <p class="precio">$ 5.000</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Papas/06papa.png" alt=""/>
-          <h2 class="titulo">PAPA LW H0057 2,27KG CON COBERTURA 9x9 x 2,27kg</h2>
-          <h3 class="subtitulo">bolsa</h3>
-          <p class="precio">$ 21.300</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-        <article><img class="imagenProducto" src="img/Papas/07papa.png" alt=""/>
-          <h2 class="titulo">PAPA LW S19 2,27KG CON COBERTURA 9x9 x 2,27kg</h2>
-          <h3 class="subtitulo">bolsa</h3>
-          <p class="precio">$ 22.550</p>
-          <button class="botton"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Agregar</button>
-        </article>
-      </div>
-    </div>
-    <footer>Diseño web realizado en el 2020</footer>
+    <footer class="footer centrado">Diseño web realizado en el 2020</footer>
   </body>
 </html>
