@@ -74,6 +74,16 @@ img {
     cursor     : pointer;
 }
 
+.activado {
+    /* Solución temporal*/
+    color: var(--blanco) !important;
+    background : var(--rojo);
+}
+
+.oculto {
+    display: none;
+}
+
 /* estilos para el encabezado de cada contenedor */
 .encabezado {
     line-height : 15px;
@@ -202,7 +212,6 @@ img {
 }
 
 .parrafoEncabezadoSecundario {
-    color: var(--rojo);
     font-size: 14px;
     font-weight : 600;
 }
@@ -269,7 +278,7 @@ img {
     font-size: 20px;
     cursor: pointer;
     display: inline-block;
-    float: right
+    float: right;
 }
 
 .borrar:hover {
@@ -365,9 +374,16 @@ img {
 
 
 
+.portadaEmpresa img {
+    /*height: auto;*/
+    max-height: 220px;
+}
 
-
-
+.icono {
+    color: var(--rojo);
+    font-size: 25px;
+    margin-right: 5px;
+}
 
 
 
@@ -410,6 +426,10 @@ img {
 
     .tituloEncabezadoPrincipal {
         font-size : 35px;
+    }
+
+    .portadaEmpresa img {
+        max-height: 400px;
     }
 }
 

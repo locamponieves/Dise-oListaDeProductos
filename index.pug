@@ -18,8 +18,9 @@ html(lang="es")
             i(class="fa fa-shopping-cart" aria-hidden="true" data-toggle="modal" data-target="#sidebar-right")
             span 0
 
-        .portadaEmpresa#topMenu
-                img(src="img/portada.jpg", alt="")
+        .fila
+            .portadaEmpresa#topMenu
+                img(src="img/P5.jpg", alt="")
 
         .fila
             .logoEmpresa
@@ -27,13 +28,41 @@ html(lang="es")
 
                 .encabezado
                     h1.tituloEncabezadoPrincipal.centrado Surtidelicias Montería
-                    p.parrafoEncabezado.centrado Domicilios y Punto de Venta. Todos los Días de 7am a 6pm. Dom y Festivos hasta 1pm
-                    p.parrafoEncabezadoSecundario.centrado Cra 9 11A 16 Monteria
+                    p.parrafoEncabezado.centrado
+                        i(class="fa fa-clock-o" aria-hidden="true").icono 
+                        | Todos los Días de 7am a 6pm. Dom y Festivos hasta 1pm
+                        
+                    p.parrafoEncabezadoSecundario.centrado
+                        i(class="fa fa-map-marker" aria-hidden="true").icono 
+                        | Cra 9 11A 16 Monteria
+                    .centrado
+                        i(class="fa fa-whatsapp" aria-hidden="true").icono
+                        i(class="fa fa-facebook" aria-hidden="true").icono
+                        i(class="fa fa-instagram" aria-hidden="true").icono
+                        
                     
         .fila
             .encabezado
                 h1.tituloEncabezado.centrado Nuestros productos
 
+            .listaCategorias
+                .item.activado Pollo
+                .item Cerdo cong
+                .item Cerdo nal
+                .item Res
+                .item Angus USA
+                .item Pescado
+                .item Mariscos
+                .item Papas
+                .item Congelados
+                .item Tocinetas
+                .item Salsas
+                .item Apanados
+                .item Quesos
+                .item Carne frias
+                .item Otros
+        
+        .fila.oculto
             .listaCategorias
                 .item Pollo
                 .item Cerdo cong
