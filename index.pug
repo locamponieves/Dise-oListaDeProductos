@@ -20,7 +20,7 @@ html(lang="es")
 
         .fila
             .portadaEmpresa#topMenu
-                img(src="img/P5.jpg", alt="")
+                img(src="img/portada.jpg", alt="")
 
         .fila
             .logoEmpresa
@@ -39,8 +39,7 @@ html(lang="es")
                         i(class="fa fa-whatsapp" aria-hidden="true").icono
                         i(class="fa fa-facebook" aria-hidden="true").icono
                         i(class="fa fa-instagram" aria-hidden="true").icono
-                        
-                    
+                          
         .fila
             .encabezado
                 h1.tituloEncabezado.centrado Nuestros productos
@@ -249,13 +248,13 @@ html(lang="es")
                                 p.precioDetalleProducto $ 4.225
                                 div(class="input-group")
                                     span(class="input-group-btn")
-                                        button(type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[2]")
+                                        button(type="button" class="btn btn-number red"  data-type="minus" data-field="quant[2]")
                                             span(class="glyphicon glyphicon-minus")
 
                                     input(type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100")
                                     
                                     span(class="input-group-btn")
-                                        button(type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]")
+                                        button(type="button" class="btn btn-number red" data-type="plus" data-field="quant[2]")
                                             span(class="glyphicon glyphicon-plus")
                             span.borrar X
                             hr
@@ -268,13 +267,13 @@ html(lang="es")
                                 p.precioDetalleProducto $ 4.225
                                 div(class="input-group")
                                     span(class="input-group-btn")
-                                        button(type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[2]")
+                                        button(type="button" class="btn btn-number red"  data-type="minus" data-field="quant[2]")
                                             span(class="glyphicon glyphicon-minus")
 
                                     input(type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100")
                                     
                                     span(class="input-group-btn")
-                                        button(type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]")
+                                        button(type="button" class="btn btn-number red" data-type="plus" data-field="quant[2]")
                                             span(class="glyphicon glyphicon-plus")
                             span.borrar X
                             hr
@@ -287,13 +286,51 @@ html(lang="es")
                                 p.precioDetalleProducto $ 4.225
                                 div(class="input-group")
                                     span(class="input-group-btn")
-                                        button(type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[2]")
+                                        button(type="button" class="btn btn-number red"  data-type="minus" data-field="quant[2]")
                                             span(class="glyphicon glyphicon-minus")
 
                                     input(type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100")
                                     
                                     span(class="input-group-btn")
-                                        button(type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]")
+                                        button(type="button" class="btn btn-number red" data-type="plus" data-field="quant[2]")
+                                            span(class="glyphicon glyphicon-plus")
+                            span.borrar X
+                            hr
+                        
+                        article.detalleProducto
+                            header.izq
+                                img.imagenProducto(src="img/4.jpg", alt="")
+                            .contenido
+                                p.tituloDetalleProducto Ala de pollo sin costilla
+                                p.precioDetalleProducto $ 4.225
+                                div(class="input-group")
+                                    span(class="input-group-btn")
+                                        button(type="button" class="btn btn-number red"  data-type="minus" data-field="quant[2]")
+                                            span(class="glyphicon glyphicon-minus")
+
+                                    input(type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100")
+                                    
+                                    span(class="input-group-btn")
+                                        button(type="button" class="btn btn-number red" data-type="plus" data-field="quant[2]")
+                                            span(class="glyphicon glyphicon-plus")
+                            span.borrar X
+                            hr
+
+                        article.detalleProducto
+                            header.izq
+                                img.imagenProducto(src="img/4.jpg", alt="")
+                            .contenido
+                                p.tituloDetalleProducto Ala de pollo sin costilla
+                                p.precioDetalleProducto $ 4.225
+                                div(class="input-group")
+                                    span(class="input-group-btn")
+                                        button(type="button" class="btn btn-number red"  data-type="minus" data-field="quant[2]")
+                                            span(class="glyphicon glyphicon-minus")
+
+                                    input(type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100")
+                                    
+                                    span(class="input-group-btn")
+                                        button(type="button" class="btn btn-number red" data-type="plus" data-field="quant[2]")
                                             span(class="glyphicon glyphicon-plus")
                             span.borrar X
                             hr
@@ -320,63 +357,125 @@ html(lang="es")
                         h4(class="modal-title") Completar pedido
 
                     div(class="modal-body")
-                        article
-                            p Métodos de Entrega
-                            p Elige como quieres que sea entregado tu pedido
+                        article.metodoDepago
+                            .fila
+                                p.tituloMetodoEntrega Métodos de Entrega
+                                p.subTituloMetodoEntrega Elige como quieres que sea entregado tu pedido
 
-                            input(type="radio")
-                            label(for="") Domicilio
+                                .domicilio.activo
+                                    input(type="radio")
+                                    label(for="") DOMICILIO
                             
-                            input(type="radio")
-                            label(for="") Recoger
+                                .domicilio
+                                    input(type="radio")
+                                    label(for="") RECOGER
 
-                            .row
-                                .col-12
-                                    label(for="") Nombre de quién recibe *
-                                .col-12
+                                .formulario
+                                    label.label(for="") 
+                                    | Nombre de quién recibe
+                                    span.obligatorio *
+                                    
                                     input(type="text")
                             
-                            .row
-                                .col-12
-                                    label(for="") Teléfono *
-                                .col-12
-                                    input(type="text")
+                                .formulario
+                                    label(for="") 
+                                    | Teléfono
+                                    span.obligatorio *
 
-                            .row
-                                .col-12
-                                    label(for="") Zona de entrega *
-                                .col-12
-                                    select
+                                    input(type="text")
+                                    span.mensajeCorto * Para ser contactado con relación a su pedido
+
+                                .formulario
+                                    label(for="") 
+                                    | Zona de entrega 
+                                    span.obligatorio *
+
+                                    select.select
+                                        option(value="s") -- Seleccione una zona --
                                         option(value="a") Opción A
                                         option(value="b") Opción B
                                         option(value="c") Opción C
                             
-                            .row
-                                .col-12
-                                    label(for="") Dirección de entrega *
-                                .col-12
+                                .formulario
+                                    label(for="") 
+                                    | Dirección de entrega 
+                                    span.obligatorio *
+                                    
                                     input(type="text")
+                                    span.mensajeCorto # Casa, Edificio, Área - Punto de Referencia
+
+                                p.tituloMetodoEntrega Programa tu entrega
+                                p.subTituloMetodoEntrega Elige una fecha y hora disponible
                                 
-                            p Formas de Pago
-                            p Elige una forma de como quieres pagar
+                                .formulario
+                                    input(type="date")                                
 
-                            input(type="radio")
-                            label(for="") Transferencia Bancolombia
 
-                            input(type="radio")
-                            label(for="") Efectivo
+                                p.tituloMetodoEntrega Formas de Pago
+                                p.subTituloMetodoEntrega Elige una forma de como quieres pagar
+                                
+                                .mediosDePago
+                                    input(type="radio")
+                                    label(for="") Transferencia Bancolombia
 
-                            input(type="radio")
-                            label(for="") Tarjeta de Crédito
+                                    article.pagoInformacion
+                                        h1 Información de pago
+                                        hr.separador
+                                        p Desde la App Bancolombia o Cajero, debes transferir a Cuenta Ahorros Bancolombia 681-000283-56
+                                        p.total Total: 
+                                        span $219.600
+                                    
+                                    hr.separador
 
-                            input(type="radio")
-                            label(for="") Cta Ahorros o Corriente Otros Bancos (No Bancolombia)
+                                .mediosDePago
+                                    input(type="radio")
+                                    label(for="") Efectivo
+
+                                    article.pagoInformacion
+                                        h1 Información de pago
+                                        hr.separador
+                                        p Paga con Efectivo al Recibir
+                                        input(type="number" placeholder="$0.00")
+                                        p.total Total: 
+                                        span $219.600
+
+                                    hr.separador
+
+                                .mediosDePago
+                                    input(type="radio")
+                                    label(for="") Tarjeta de Crédito
+
+                                    article.pagoInformacion
+                                        h1 Información de pago
+                                        hr.separador
+                                        p A través del link de pagos Surtidelicias, se te enviará con el valor de tu factura
+                                        p.total Total: 
+                                        span $219.600
+
+                                    hr.separador
+
+                                .mediosDePago
+                                    input(type="radio")
+                                    label(for="") Otros Bancos
+
+                                    article.pagoInformacion
+                                        h1 Información de pago
+                                        hr.separador
+                                        p A través del link de pagos Surtidelicias, se te enviará con el valor de tu factura
+                                        p.total Total: 
+                                        span $219.600
+
+                                    hr.separador
                             
-                            .row
-                                .col-12
+                                .textarea
                                     label(for="") ¿Quieres aclarar algo del pedido?
-                                .col-12
                                     textarea
+                                    span.mensajeCorto * Algo que le quiera mencionar a Surtidelicias Montería
+
+                                article.informacionComercio
+                                    i.fa.fa-info-circle
+                                    h1 Información del Comercio
+                                    p Efectivo al Recibir o Transfer. Ahorros Bancolombia 681-000283-56
                             
                     div(class="modal-footer")
                         .con
@@ -388,8 +487,7 @@ html(lang="es")
                         .con.resaltado
                             p.izq Total
                             p.derecha $ 4.225
-                        button.continuarPedido Completar pedido por WhatsApp
-
+                        button.continuarPedidoWhatsApp Completar pedido por WhatsApp
 
         footer.footer.centrado Diseño web realizado en el 2020
 
