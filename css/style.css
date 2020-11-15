@@ -358,6 +358,10 @@ img {
     top:10px;
 }
 
+
+.subMenu {
+    margin-top: -20px;
+}
 .modal {
     overflow-y: auto;
 }
