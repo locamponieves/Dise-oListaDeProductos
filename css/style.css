@@ -357,7 +357,9 @@ img {
     top:10px;
 }
 
-
+.modal {
+    overflow-y: auto;
+}
 
 /* MODAL FADE LEFT RIGHT BOTTOM */
 .modal.fade:not(.in).left .modal-dialog {
