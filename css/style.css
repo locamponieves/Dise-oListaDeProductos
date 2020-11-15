@@ -277,6 +277,10 @@ img {
     display: inline-block;
 }
 
+#carritoCompra{
+    width: 165px !important;
+}
+
 .input-group {
     width: 100%;
 }
