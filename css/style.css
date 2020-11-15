@@ -361,6 +361,14 @@ img {
     overflow-y: auto;
 }
 
+.descuento {
+    position: absolute;
+    padding: 10px;
+    color: var(--blanco);
+    border-radius: 0 0 5px 5px;
+    background: var(--rojo);
+}
+
 /* MODAL FADE LEFT RIGHT BOTTOM */
 .modal.fade:not(.in).left .modal-dialog {
 	-webkit-transform: translate3d(-25%, 0, 0);

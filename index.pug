@@ -87,6 +87,7 @@ html(lang="es")
             .colum-5
                 article.articulo
                     header
+                        span.descuento 10%
                         img.imagenProducto(src="img/4.jpg", alt="")
                     .contenidoArticulo
                         h2.titulo Ala de pollo
@@ -101,16 +102,8 @@ html(lang="es")
                         h2.titulo Punta chuleta
                         h3.subtitulo Paquete
                         p.precio $ 10.650
-                        div(class="input-group")
-                            span(class="input-group-btn")
-                                button(type="button" class="btn btn-number red"  data-type="minus" data-field="quant[2]")
-                                    span(class="glyphicon glyphicon-minus")
-
-                            input(type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100" disabled)
-                                    
-                            span(class="input-group-btn")
-                                button(type="button" class="btn btn-number red" data-type="plus" data-field="quant[2]")
-                                    span(class="glyphicon glyphicon-plus")
+                        button.boton
+                            i.fa.fa-shopping-cart(aria-hidden="true")
                 article.articulo
                     header
                         img.imagenProducto(src="img/product-9.jpg", alt="")
