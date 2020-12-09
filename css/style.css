@@ -416,7 +416,7 @@ img {
 
 .portadaEmpresa img {
     /*height: auto;*/
-    max-height: 220px;
+    max-height: 100%;
 }
 
 .icono {
@@ -628,6 +628,7 @@ input:focus, select:focus, textarea:focus {
   }
   
   .modalD-content {
+      margin: 0 auto;
     position: relative;
     border-radius: 5px;
     width: 90%;
